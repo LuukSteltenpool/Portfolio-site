@@ -12,7 +12,7 @@
     <div class="headerstyle">
    <img src="logo.png" alt="logo" class="logo">
     <div class="header-right">
-        <a class="active" href="gridtest.html">home</a>
+        <a class="active" href="index.html">home</a>
        <a class="active" href="Mycreations.html">Mijn projecten</a>
         <a class="active" href="contact">contact</a>
     </div>
@@ -33,7 +33,7 @@
         Ea omnis expedita ea asperiores praesentium et voluptates doloremque ea molestiae tenetur. Qui dolore veritatis eos nesciunt officiis qui obcaecati molestiae ad voluptatem officiis et deleniti enim sed dolorem voluptatum. Qui iusto molestias qui quis nihil et neque natus non odio delectus eum quisquam illo!
 
         Est explicabo ullam et velit nihil qui quod unde qui dolorum molestiae hic ratione nihil in ratione quas. Qui sunt impedit in omnis unde et Quis iste nam saepe voluptates et doloribus laborum.
-        <img scr="360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" alt="placeholder" class="placeholder">
+
     </Div>
 
     <Div class="side-item">4</Div>

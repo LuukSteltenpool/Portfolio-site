@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* dit is de algemen achtergrond en grid container */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: #120f29;
+    padding: 0px;
+    height: 100vh;
+    background-image: url("images/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-repeat: round;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+
+}
+
+/* de text in het midden van het scherm is hier, margin voor center scherm samen met flex wrap */
+.grid-item {
+    z-order: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-content: center;
+    padding: 0px;
+    font-size:20px;
+    font-family: Arial;
+    text-align: center;
+    text-decoration-color: white;
+    height: 83vh;
+    color: white;
+    max-width: 50%;
+    max-height: 50%;
+
+
+
+
+}
+
+
+
+
+.headerstyle {
+    display: flex;
+    align-items: center;
+    text-decoration-color: none;
+    justify-content: center;
+    background-color: #030617;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 25px;
+    border-radius: 3px;
+    color: white;
+    opacity: 50%
+
+
+
+
+}
+.header a.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header a:hover {
+    background-color: black;
+    color: red;
+}
+.footer {
+    opacity: 50%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #030617;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 10px;
+    font-family: Arial;
+    text-align: center;
+
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* phones */
+    [class*="grid-item"]
+    [class*="side-item"]
+    [class*="footer"]
+
+
+}
+.active:hover {
+    background-color: gray;
+}
+
+.logo {
+    max-width: 50px;
+    }
+
+
+
+.placeholder {
+    max-width: 1000px;
+}
+
+
