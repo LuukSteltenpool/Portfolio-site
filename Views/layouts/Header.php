@@ -10,12 +10,12 @@
 
   <div class="headerstyle">
 
-    <img src="../images/logo.png" alt="logo" class="logo">
+    <img src="../../images/logo.png" alt="logo" class="logo">
     <div class="headertext">
-      <a class="headertext" href="../Index.php">Home</a>
-      <a class="headertext" href="../Mycreations.php">Mijn projecten</a>
+      <a class="headertext" href="../Index.view.php">Home</a>
+      <a class="headertext" href="../Mycreations.view.php">Mijn projecten</a>
       <a class="headertext" href="contact">Contact</a>
-      <a class="headertext" href="../Downloads.php">Downloads</a>
+      <a class="headertext" href="../Downloads.view.php">Downloads</a>
 
     </div>
   </div>
