@@ -1,60 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>homepage</title>
-    <link rel="stylesheet" href="Portfoliocss.css">
-    <script src="../javascripts.js"></script>
-</head>
-<body>
-    <?php require 'Views/layouts/Header.php'; ?> <!--werkt niet omdat de path niet klopt??-->
-
-    <!--items achtergrond-->
-    <Div class="grid-container" id="demo">
-
-    </Div>
-
-    <!--Korte biografie text-->
-    <Div class="grid-item">
-
-
-        Lorem ipsum dolor sit amet. 33 odit similique ab repellat accusantium rem sunt fugit. A obcaecati Quis eos Quis quaerat eos architecto nihil ea itaque officiis sed error molestiae rem corporis molestiae ut iste omnis.
-
-        Ea omnis expedita ea asperiores praesentium et voluptates doloremque ea molestiae tenetur. Qui dolore veritatis eos nesciunt officiis qui obcaecati molestiae ad voluptatem officiis et deleniti enim sed dolorem voluptatum. Qui iusto molestias qui quis nihil et neque natus non odio delectus eum quisquam illo!
-
-        Est explicabo ullam et velit nihil qui quod unde qui dolorum molestiae hic ratione nihil in ratione quas. Qui sunt impedit in omnis unde et Quis iste nam saepe voluptates et doloribus laborum.
-    </Div>
-
-    <?php include 'Views/layouts/Footer.php'; ?> <!--php footer -->
-
-
-
-
-</body>
-</html>
-
 <?php
-$uri= $_SERVER['REQUEST_URI'];
 
-switch ($uri) {
-    case '/Home':
-        require('./Views/Index.view.php');
-        require('./Views/Portfoliocss.css');
+//alle controllers binnen halen
+require 'Controller/Indexcontroller.php';
+require 'Controller/Projectscontroller.php';
+require 'Controller/Contactcontroller.php';
+require 'Controller/Downloadcontroller.php';
+
+$path = $_SERVER['PATH_INFO'] ?? '/';
+
+//Switch cases voor het wisselen van de URI van de pagina,
+// bij een niet bestaande pagina gaat hij naar Home.
+
+switch ($path) {
+    case '/':
+$Homepage = new Indexcontroller();
+$Homepage->homepage();
         break;
 
-    case '/myprojects':
-        require 'Views/Mycreations.view.php';
+
+    case '/Mycreations':
+$projectspage = new Projectscontroller(); //de controller naam
+$projectspage->projectspage(); //functie in controller
         break;
 
-    case '/downloads':
-        require('Views/Downloads.view.php');
+    case '/Downloads':
+        $downloadspage = new Downloadcontroller(); //de controller naam
+        $downloadspage->downloadpage(); //functie in controller
         break;
 
-#    case '/contact':
-     #   require('Views/contact.view.php');
-    #    break;
+    case '/Contact':
+       $contactspage = new Contactcontroller(); //de controller naam
+       $contactspage->contactpage(); //functie in controller
+        break;
 
     default:
-        require('Views/index.view.php');
+        echo "error 404"; //default als hij niet goed route.
         break;
 }

@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>aboutpage</title>
-    <link rel="stylesheet" href="Portfoliocss.css">
+    <title>Projecten</title>
+    <link rel="stylesheet" href="../Views/Portfoliocss.css">
 
 </head>
 <body>
-<?php include 'Header.html'; ?>
+<?php require 'Views/layouts/Header.php'; ?>
 
 <section>
 <!--items achtergrond-->
-<Div class="grid-container">
-</Div>
+    <div class="golfanim GolfAnimatieClss">
+        <div class="golfanimbinnenkant bgtop">
+            <div class="golf golftop" style="background-image: url('../images/golfjes/wave-top.png')"></div>
+        </div>
+        <div class="golfanimbinnenkant bgMiddle">
+            <div class="golf golfmidden" style="background-image: url('../images/golfjes/wave-mid.png')"></div>
+        </div>
+        <div class="golfanimbinnenkant bgBottom">
+            <div class="golf golfbodem" style="background-image: url('../images/golfjes/wave-bodem.png')"></div>
+        </div>
+
+    </div>
     <!--projectenlijst-->
     <Div class="grid-item">
 
@@ -20,7 +30,7 @@
 
     </Div>
 
-    <?php include 'Footer.html'; ?>
+    <?php include 'Views/layouts/Footer.php'; ?>
 </section>
 
 </body>

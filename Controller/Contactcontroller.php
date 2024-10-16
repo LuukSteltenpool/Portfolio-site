@@ -1,8 +1,8 @@
 <?php
-class Indexcontroller {
-    public function page():void {
-        $title = 'homepage';
+class Contactcontroller {
+    public function contactpage():void { //functie pagina openen//
+        $title = 'contact';
 
-        include "./Views/Index.view.php";
+        include "Views/contact.view.php";
     }
 }

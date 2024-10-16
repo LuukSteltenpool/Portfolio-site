@@ -11,11 +11,11 @@
   <div class="headerstyle">
 
     <img src="../../images/logo.png" alt="logo" class="logo">
-    <div class="headertext">
-      <a class="headertext" href="../Index.view.php">Home</a>
-      <a class="headertext" href="../Mycreations.view.php">Mijn projecten</a>
-      <a class="headertext" href="contact">Contact</a>
-      <a class="headertext" href="../Downloads.view.php">Downloads</a>
+    <div class="a">
+      <a class="hovereffect" href="../">Home</a>
+      <a class="hovereffect" href="../Mycreations">Mijn projecten</a>
+      <a class="hovereffect" href="../Contact">Contact</a>
+      <a class="hovereffect" href="../Downloads">Downloads</a>
 
     </div>
   </div>

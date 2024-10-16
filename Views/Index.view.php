@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>homepage</title>
-    <link rel="stylesheet" href="../Portfoliocss.css">
+    <link rel="stylesheet" href="../Views/Portfoliocss.css">
     <script src="../javascripts.js"></script>
 </head>
 <body>
-<?php include 'Views/layouts/Header.html'; ?> <!--php header erin doen-->
-</php>
+    <?php require 'Views/layouts/Header.php'; ?> <!--werkt niet omdat de path niet klopt??-->
 
+    <div class="golfanim GolfAnimatieClss">
+        <div class="golfanimbinnenkant bgtop">
+            <div class="golf golftop" style="background-image: url('../images/golfjes/wave-top.png')"></div>
+        </div>
+        <div class="golfanimbinnenkant bgMiddle">
+            <div class="golf golfmidden" style="background-image: url('../images/golfjes/wave-mid.png')"></div>
+        </div>
+        <div class="golfanimbinnenkant bgBottom">
+            <div class="golf golfbodem" style="background-image: url('../images/golfjes/wave-bodem.png')"></div>
+        </div>
 
-
-
-
-    <!--items achtergrond-->
-    <Div class="grid-container" id="demo">
+    </div>
 
     </Div>
 
@@ -30,10 +35,11 @@
         Est explicabo ullam et velit nihil qui quod unde qui dolorum molestiae hic ratione nihil in ratione quas. Qui sunt impedit in omnis unde et Quis iste nam saepe voluptates et doloribus laborum.
     </Div>
 
-    <?php include 'Views/layouts/Footer.html'; ?> <!--php footer -->
+    <?php include 'Views/layouts/Footer.php'; ?> <!--php footer -->
 
-    </Div>
 
-</section>
+
+
 </body>
 </html>
+

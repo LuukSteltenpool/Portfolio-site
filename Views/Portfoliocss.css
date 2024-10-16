@@ -1,17 +1,17 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; /* volle pagina gebruiken */
 }
-/* dit is de algemen achtergrond en grid container */
+/* dit is de algemene achtergrond en grid container */
 .grid-container{
     display: grid;
     grid-template-columns: 1fr ;
     background-color: #120f29;
     height: 100vh;
-    background-image: url("images/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-image: url("../images/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
     background-repeat: round;
     z-index: -1;
-    position: absolute;
+    position: absolute; /*zet de achtergrond vast tijdens scrollen */
     top: 0;
     left: 0;
     width: 100%;
@@ -21,24 +21,28 @@
 /* de text in het midden van het scherm is hier, margin voor center scherm samen met flex wrap */
 .grid-item {
     z-index: 5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
     align-content: center;
-    font-size:30px;
-    font-family: Arial;
+    font-size: 20px;
+    font-family:  'Poppins', sans-serif;
     text-align: center;
     text-decoration-color: white;
-    height: 83vh;
+    height: 88vh;
     color: white;
     max-width: 50%;
     max-height: 50%;
+
 }
 
 
 
-/* Properties voor de header (Header.html), heeft een reference in de php bestanden.*/
+/* Properties voor de header (Header.php), heeft een reference in de php bestanden.*/
 
 .headerstyle {
     display: flex;
@@ -46,9 +50,8 @@
     justify-content: center; /* midden van navbar horizontaal*/
     background-color: #030617;
     text-align: center;
-    height: 8vh;
-    font-size: 20px;
-    font-family: Arial;
+    height: 6vh;
+    font-family:  'Poppins', sans-serif;;
     border-radius: 3px;
     color: white;
     opacity: 50%
@@ -61,11 +64,18 @@ verder een staat hier de on hovered*/
     opacity: 100%;
     align-items: center; /* midden van navbar verticaal*/
     justify-content: center; /* midden van navbar horizontaal*/
-    font-size: 25px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
 }
 .headertext:hover{
+    background-position: 0;
     background-color: black;
     color: purple;
+
+}
+.header:hover::before {
+    width: 100%
+
 }
 
 
@@ -75,14 +85,19 @@ verder een staat hier de on hovered*/
 }
 
 .footer {
+    position: absolute; /*footer aan de bodem plakken */
+    bottom: 0;/*footer aan de bodem plakken */
+    right: 0;/*footer aan de bodem plakken */
+    left: 0;/*footer aan de bodem plakken */
+    margin: 0 auto;/*footer aan de bodem plakken */
     opacity: 50%;
     background-color: #030617;
     border: 1px solid black;
     align-items: center;
     align-content: center;
-    height: 8.5vh;
+    height: 5.5vh;
     font-size: 20px;
-    font-family: Arial;
+    font-family:  'Poppins', sans-serif;
     text-align: center;
     color: white;
 }
@@ -96,7 +111,7 @@ verder een staat hier de on hovered*/
 }
 
 .logo {
-    max-width: 90px;
+    max-width: 60px;
     opacity: 100%;
     }
 
@@ -107,3 +122,157 @@ verder een staat hier de on hovered*/
 }
 
 
+.a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.hovereffect::before,
+
+.hovereffect::after {
+    content: '';
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.hovereffect::before {
+    background-color: white; /*kleur van de balk onder de header-text */
+    bottom: 0;
+    transform-origin: 100% 50%; /*laat de balk verdwijnen aan t eind niet in het midden */
+    height: 2px; /* dikte van de balk */
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.1, 0, 0.24, 1); /*de transform animation, anders spawned ie gewoon in */
+}
+.hovereffect::after {
+    content: attr(data-replace);
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    color: #54b3d6;
+}
+
+.hovereffect:hover::before {
+    transform-origin: 0% 50%;
+    width: 100%;
+    color: white;
+    transform: scaleX(1);
+}
+.hovereffect:hover::after {
+    transform: translate3d(0, 0, 0);
+
+}
+
+.hovereffect span {
+    display: inline-block;
+    color: white;
+    transition: transform .3s cubic-bezier(0.1, 0, 0.24, 1);
+}
+
+.hovereffect:hover span {
+    transform: translate3d(-200%, 0, 0);
+
+
+}
+
+.body {
+    color: white;
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    line-height: 1.5;
+    height: 100vh;
+    place-items: center;
+}
+
+.hovereffect {
+    text-decoration: none;
+
+    font-weight: 700;
+    vertical-align: top;
+    color: white;
+}
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.golfanim {
+    z-index: -10;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.golfanimbinnenkant {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%); /*achergrond kleur */
+}
+.bgtop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.golf {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.golftop {
+    background-size: 50% 100px;
+}
+.GolfAnimatieClss .golftop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.golfmidden {
+    background-size: 50% 120px;
+}
+.GolfAnimatieClss .golfmidden {
+    animation: move_wave 10s linear infinite;
+}
+.golfbodem {
+    background-size: 50% 100px;
+}
+.GolfAnimatieClss .golfbodem {
+    animation: move_wave 15s linear infinite;
+}
+
+
+
+
+.Contactform {
+    display: flex;
+
+    text-align: center;
+    align-content: center;
+
+}
