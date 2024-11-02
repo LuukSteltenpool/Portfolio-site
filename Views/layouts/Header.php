@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Header</title>
 </head>
 <body>
@@ -10,7 +11,7 @@
 
   <div class="headerstyle">
 
-    <img src="../../images/logo.png" alt="logo" class="logo">
+    <img src="../images/logo2.png" alt="logo" class="logo">
     <div class="a">
       <a class="hovereffect" href="../">Home</a>
       <a class="hovereffect" href="../Mycreations">Mijn projecten</a>

@@ -29,14 +29,14 @@
     <Div class="grid-item">
 
         <!--cv download-->
-<a class ="grid-item" href="/images/background.jpg" download> Download mijn cv
+<a class ="grid-item" href="/images/cv/cv.docx" download> Download mijn cv
 
 
 </a>
     </Div>
 
 
-    <?php include 'Views/layouts/Footer.php'; ?> <!--php footer -->
+    <!-- ?php include 'Views/layouts/Footer.php'; ?> php footer (footer heb ik uit want staat mooier zonder)-->
 
 
 

@@ -1,4 +1,5 @@
 <?php
+require 'Controller/Contactcontroller.php';
 
 $servername = "localhost";
 $username = "root";
@@ -7,7 +8,6 @@ $dbname = "portfolioapp";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // 'kijk of alles gepost is van het  forum'
@@ -29,7 +29,10 @@ try {
         // Execute the statement
         $stmt->execute();
 
-        echo "New record created successfully";
+        $contactspage = new Contactcontroller(); //de controller naam
+        $contactspage->contactpage(); //functie in controller
+
+
     }
 } catch(PDOException $e) {
     echo $sql . "<br>" . $e->getMessage();

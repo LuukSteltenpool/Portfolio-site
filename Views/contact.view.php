@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>contact</title>
     <link rel="stylesheet" href="../Views/Portfoliocss.css"> <!--css gelinked -->
     <script src="../javascripts.js"></script>
@@ -16,7 +17,7 @@
 
     <div class="grid-item">
 <!--begin form -->
-<h1>Contact</h1>
+<h1>Contact me</h1>
 
         <Div class="Contactform">
         <form action="../contact.php" method="post">
@@ -39,6 +40,12 @@
             <button>Send</button>
         </form>
 
+<div>
+
+ Email: L.M.Steltenpool@gmail.com
+    <br>
+    Phone number: 0686373521
+</div>
 
     </div>
     </div>
@@ -55,9 +62,13 @@
         </div>
 
     </div>
+
+
+
+
     <!-- einde achtergrond golven -->
 
-    <?php include 'Views/layouts/Footer.php'; ?> <!--php footer -->
+    <!-- ?php include 'Views/layouts/Footer.php'; ?> php footer (footer heb ik uit want staat mooier zonder)-->
 
 
 
