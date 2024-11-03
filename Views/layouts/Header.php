@@ -14,7 +14,7 @@
     <img src="../images/logo2.png" alt="logo" class="logo">
     <div class="a">
       <a class="hovereffect" href="../">Home</a>
-      <a class="hovereffect" href="../Mycreations">Mijn projecten</a>
+      <a class="hovereffect" href="../Mycreations">My Projects</a>
       <a class="hovereffect" href="../Contact">Contact</a>
       <a class="hovereffect" href="../Downloads">Downloads</a>
 

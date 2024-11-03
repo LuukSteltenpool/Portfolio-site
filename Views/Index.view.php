@@ -23,7 +23,7 @@
 
     </div>
 
-    </Div>
+
 
     <!--Korte biografie text-->
     <Div class="grid-item">

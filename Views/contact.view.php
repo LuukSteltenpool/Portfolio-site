@@ -42,9 +42,13 @@
 
 <div>
 
- Email: L.M.Steltenpool@gmail.com
+ Email: <br>
+    L.M.Steltenpool@gmail.com
     <br>
-    Phone number: 0686373521
+    Phone number:
+    <br>
+
+    0686373521
 </div>
 
     </div>

@@ -43,7 +43,7 @@
                                 In the year 2020 and 2021 I focussed on making a functioning survival horror game, being inspired by many other games I played before.
                                 The game was developed in the Unreal Engine version 4.26 coding in C++ and making use of the blueprint system.
                                 I made almost all of the assets in Blender.
-                                <img src="images/Projectpictures/survivalgameimage.png" class="projectimage">
+                                <img src="../images/Projectpictures/survivalgameimage.png" class="projectimage">
                             </p>
                         </div>
                     </a>
@@ -62,7 +62,7 @@
                                 This IT company worked in Email protection, being used all over the globe. What they lacked was a way to properly show the
                                 customer how their product worked. Me, and my other 2 group members (Sven Frank and Aryan Penninkhof) got to work and ended up making
                                 a full 2d animation to fully explain how the product worked. The animation was made in Adobe Aftereffects and can be found here:
-                                <video src="images/Projectpictures/secumailervideo.mp4" controls class="projectimage">
+                                <video src="../images/Projectpictures/secumailervideo.mp4" controls class="projectimage">
                                 </video>
 
                             </p>

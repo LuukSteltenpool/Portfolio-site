@@ -2,25 +2,9 @@
     margin: 0;
     padding: 0; /* volle pagina gebruiken */
 }
-/* dit is de algemene achtergrond en grid container */
-.grid-container {
-    display: grid;
-    grid-template-columns: 15fr, 5fr;
-    background-color: #120f29;
-    height: 100vh;
-    background-image: url("../images/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
-    background-repeat: round;
-    z-index: -1;
-    position: absolute; /*zet de achtergrond vast tijdens scrollen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-size: cover;
-}
 
-
+/*Grid item houdt de text op het welkom scherm vast. */
 .grid-item {
-
     position: relative;
     z-index: 5;
     margin: auto;
@@ -53,6 +37,7 @@
 }
 /* text kleur van de header weer wit maken en opacity weer op 100%
 verder een staat hier de on hovered*/
+
 .headertext {
     color: white;
     opacity: 100%;
@@ -61,6 +46,7 @@ verder een staat hier de on hovered*/
     font-size: 20px;
     transition: all 0.2s ease-in-out;
 }
+
 .headertext:hover{
     background-position: 0;
     background-color: black;
@@ -114,7 +100,7 @@ verder een staat hier de on hovered*/
     position: relative;
     display: inline-block;
 }
-
+/* Zorgen dat de header interactible is.*/
 .hovereffect::before,
 
 .hovereffect::after {
@@ -141,7 +127,7 @@ verder een staat hier de on hovered*/
 }
 
 .hovereffect:hover::before {
-    transform-origin: 0% 50%;
+    transform-origin: 0 50%;
     width: 100%;
     color: white;
     transform: scaleX(1);
@@ -180,7 +166,7 @@ verder een staat hier de on hovered*/
     vertical-align: top;
     color: white;
 }
-
+/* Golf achtergrond en kleur*/
 @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
@@ -251,7 +237,7 @@ verder een staat hier de on hovered*/
 .GolfAnimatieClss .golfbodem {
     animation: move_wave 15s linear infinite;
 }
-
+/* contactform gecentreerd houden.*/
 .Contactform {
     display: flex;
     align-items: center;
@@ -269,16 +255,7 @@ verder een staat hier de on hovered*/
     max-width: 400px;
 }
 
-@media only screen and (max-width: 768px) {
-    [class*="fotovanmij"] {
-        position: fixed;
-        left: 0;
-        top: 0;
 
-
-
-    }
-}
 
 .first-text{
     font-size: 50px;
@@ -313,7 +290,7 @@ verder een staat hier de on hovered*/
     }
     100% {
 
-        left: 0%;
+        left: 0;
     }
 }
 
@@ -374,7 +351,7 @@ verder een staat hier de on hovered*/
 
 .main-timeline .timeline {
     padding: 35px 0;
-    margin-top: 0px; /* zorgt dat alle lijnen overeenkomen*/
+    margin-top: 0; /* zorgt dat alle lijnen overeenkomen*/
     position: relative;
     z-index: 1;
 }
@@ -623,7 +600,9 @@ verder een staat hier de on hovered*/
     }
     .main-timeline .timeline-icon{ font-size: 60px; }
     .main-timeline .timeline-year{ font-size: 40px; }
-
+    .grid-item {
+        font-size: 15px;
+        transform:translateY(0);}
     .Contactform {
         font-size: 12px;
     }
@@ -658,7 +637,8 @@ verder een staat hier de on hovered*/
     }
 
     .Contactform {
-        font-size: 5px;
+        font-size: 9px;
+
     }
     .grid-item {
         font-size: 12px;
